@@ -1,7 +1,6 @@
 # zawartosci rejestrow
 print("Instrukcje powinny znajdować się każda w innej lini, Przykłady instrukcji S(2) T(3,1) Z(7) J(1,2,6)")
 print("wartosci powinny byc oddzielone znakiem przecinka ")
-print("UWAGA ROZWIAZANIE NIE JST OPTYMALNE")
 r = []
 # dodaje 0 na poczatku aby indexy sie zgadzaly
 r.append(0)
