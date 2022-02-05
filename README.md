@@ -5,6 +5,7 @@ To use URM-mchine program you need a file named **test.txt** with olny 1 command
 ## URM - machine
 To use Julia set program you need to install **numpy** and **matplotlib***: 
   >pip install numpy
+  >
   >pip install matplotlib
 To run program use python -u julia_set.py then enter all the data.
 [![GitHub Logo](/images/logo.png)](https://github.com/)
