@@ -9,3 +9,6 @@ To use Julia set program you need to install **numpy** and **matplotlib***:
   >pip install matplotlib
   
 To run program use python -u julia_set.py then enter all the data.
+
+### HairPin
+Create a hairpin on DNA and gives max suma of valid pairs
