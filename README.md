@@ -12,7 +12,7 @@ Sieć pracuje w 3 trybach
   
   2. asynchroniczny z podaną kolejnością odświeżania
   ```python
-    data.predict_async1(example,[6 ,1, 11, 12, 2, 9, 3, 5, 7, 10, 4, 8, 8, 11, 2, 9, 7, 5, 1, 4, 6, 12, 3, 10])
+    data.predict_async1(example,[6,1,11,12,2,9,3,5,7,10,4,8,8,11,2,9,7,5,1,4,6,12,3,10])
     data.show_result(3,4,4)
   ```
   ![Screenshot](Hopfield_images/async.png)
