@@ -16,4 +16,10 @@ Sieć pracuje w 3 trybach
     data.show_result(3,4,4)
   ```
   ![Screenshot](async2.png)
+  
   4. asynchroniczny z losową kolejnością odświeżania
+  ```python
+    data.predict_async2([0, 1, 1, 1, 0, 1, -1, -1, -1, 0, 1, 0])
+    data.show_result(3,4,3)
+  ```
+  ![Screenshot](async3.png)
