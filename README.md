@@ -4,5 +4,9 @@
 Program przyjmuje listę wzorców np. literowych po czym uczy sieć do rozpoznawania tych wzorócw metodą fit().
 Sieć pracuje w 3 trybach
   1. synchronczny z kolejnością odświeżania od 1
-  2. asynchroniczny z podaną kolejnością odświeżania
-  3. asynchroniczny z losową kolejnością odświeżania
+  ```python
+    data.predict_sync(example)
+    data.show_result(3,4,1)
+  ```
+  3. asynchroniczny z podaną kolejnością odświeżania
+  4. asynchroniczny z losową kolejnością odświeżania
