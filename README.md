@@ -9,5 +9,6 @@ Sieć pracuje w 3 trybach
     data.show_result(3,4,1)
   ```
   ![Screenshot](download.png)
-  3. asynchroniczny z podaną kolejnością odświeżania
-  4. asynchroniczny z losową kolejnością odświeżania
+  
+  2. asynchroniczny z podaną kolejnością odświeżania
+  3. asynchroniczny z losową kolejnością odświeżania
