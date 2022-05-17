@@ -8,6 +8,6 @@ Sieć pracuje w 3 trybach
     data.predict_sync(example)
     data.show_result(3,4,1)
   ```
-  ![alt text](https://github.com/[klitersik]/[python_projects]/download.png?raw=true)
+  ![Screenshot](download.png)
   3. asynchroniczny z podaną kolejnością odświeżania
   4. asynchroniczny z losową kolejnością odświeżania
