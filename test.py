@@ -41,17 +41,17 @@ async def main():
     for i in range(1,45):
         print("Analizowana strona:",i)
         await page.goto(f'https://stooq.pl/t/?i=516&v=0&l={i}&o=5')
-        await page.waitFor(3000)
+        await page.waitFor(5000)
 
         button = await page.xpath(button_x_Path)
         if button:
-            await page.waitFor(2000)
+            await page.waitFor(3000)
             await button[0].click()
-            await page.waitFor(5000)
+            await page.waitFor(6000)
             await page.reload()
-            await page.waitFor(8000)
+            await page.waitFor(9000)
 
-        await page.waitFor(3000)
+        await page.waitFor(5000)
 
         table = await page.waitForXPath(table_x_Path)
         html_code = await page.evaluate('(element) => element.outerHTML', table)
