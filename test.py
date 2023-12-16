@@ -6,9 +6,10 @@ import numpy as np
 from datetime import datetime
 from supabase import create_client, Client
 
+now = datetime.now()
 months_dict = {
-    'sty': '01', 'lut': '02', 'mar': '03', 'kwi': '04', 'maj': '05', 'cze': '06',
-    'lip': '07', 'sie': '08', 'wrz': '09', 'paź': '10', 'lis': '11', 'gru': '12'
+    'jan': '01', 'feb': '02', 'mar': '03', 'apr': '04', 'may': '05', 'jun': '06',
+    'jul': '07', 'aug': '08', 'sep': '09', 'oct': '10', 'nov': '11', 'dec': '12'
 }
 
 button_x_Path = '/html/body/div/div[2]/div[1]/div[2]/div[2]/button[1]'
@@ -76,7 +77,7 @@ async def main():
     df['Data'].replace('', np.nan, inplace=True)
     df = df.dropna(how='any', axis=0)
     df.dropna(subset=['Data'], inplace=True)
-    df["Data"] = "15 gru"
+    df["Data"] = now.strftime("%d %b").lower()
     df['Data'] = df.apply(konwersja_daty, axis=1)
     df['Data'] = df['Data'].astype(str)
 
