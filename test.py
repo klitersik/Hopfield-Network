@@ -36,7 +36,7 @@ def konwersja_wartosci(row):
         return value   # Zwrócenie wartości bez zmiany
     
 async def main():
-    browser = await launch(autoClose=False,headless=True)
+    browser = await launch(autoClose=False,headless=True,options={'args': ['--no-sandbox']})
     page = await browser.newPage()
     for i in range(1,45):
         print("Analizowana strona:",i)
